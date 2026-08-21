@@ -21,6 +21,7 @@ if st.button("Calculate"):
     elif operation == 'Multiplication':
         result = num1 * num2
 
+    # will throw an error if num2 is 0, so we need to handle that case
     elif operation == "Division":
         if num2 == 0:
             st.error("Error: Division by zero is not allowed.")
