@@ -7,7 +7,7 @@ num2 = st.number_input("Enter second number")
 
 operation = st.selectbox(
     "Choose operation",
-    ["Addition", "Subtraction","Multiplication","Division"]
+    ["Addition", "Subtraction","Multiplication","Division", "Floor Division"]
 )
 
 if st.button("Calculate"):
@@ -20,6 +20,9 @@ if st.button("Calculate"):
 
     elif operation == 'Multiplication':
         result = num1 * num2
+
+    elif operation == "Floor Division":
+        result = num1 // num2
 
     # will throw an error if num2 is 0, so we need to handle that case
     elif operation == "Division":
